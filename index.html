@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Currency Convertor</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+            Currency Convertor
+        </div>
+        <div class="conversion-form">
+            <div class="row">
+
+                <div class="heading">Amount</div>
+                <div class="input-container">
+                    <input type="text" id="conversionAmount" value=1>
+                    <p class="validationError hide" id="error_conversionAmount"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="heading">From</div>
+                <div class="input-container">
+                    <select name="from" id="from"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="heading">To</div>
+                <div class="input-container">
+                    <select name="to" id="to"></select>
+                </div>
+            </div>
+        </div>
+        <div class="conversion-details">
+            <div class="loader" id="conversionDetailLoader"></div>
+            <div id="conversionDetailText" class="hide"></div>
+        </div>
+        <div class="footer">
+            <button id="convert" class="convert-button">Convert</button>
+        </div>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
